@@ -36,4 +36,14 @@ function validateProfileNames() {
 }
 
 
+// changing case of a string 
+const changingCase = "martin";
+console.log(changingCase.toLocaleUpperCase());
+
+let changeCase2 = "malawi";
+const updated = changeCase2.replace("ma", "MA");
+
+console.log(updated);
+
+
 
