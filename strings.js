@@ -44,5 +44,23 @@ but with God being our protector everything is possible`;
 console.log(messageWorld);
 
 
+let profileAge = 90;
+let profileName = "Martin";
+
+let finalMessage = Number(profileAge) + profileName;
+console.log(typeof(finalMessage));
+
+// converting numbers to strings and strings to numbers ==========//
+let profileNumber = 982783;
+let newProfileNumber = String(profileNumber);
+console.log(typeof(newProfileNumber));
+
+let profileString = "martin silungwe";
+let newProfileString = Number(profileString);
+
+console.log(typeof(newProfileString));
+
+
+
 
 
