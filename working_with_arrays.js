@@ -35,3 +35,13 @@ console.log(profileNames.pop());
 
 console.log(profileNames);
 
+// ========= looping through all the items in the array ============= //
+for (const profile of profileNames) {
+    console.log(profile);
+}
+
+// ========= working with map function here ============ //
+const allNumbers = [893, 3949, "martin", "silungwe", "brenda", "maggie"];
+
+const newListPage = map(allNumbers);
+console.log(newListPage);
