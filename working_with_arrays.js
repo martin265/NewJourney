@@ -43,5 +43,8 @@ for (const profile of profileNames) {
 // ========= working with map function here ============ //
 const allNumbers = [893, 3949, "martin", "silungwe", "brenda", "maggie"];
 
-const newListPage = map(allNumbers);
-console.log(newListPage);
+
+// =========== converting strings into an array here =============== //
+const data = "ronald,maggie,chifundo,wongani,justine,martin";
+const names = data.split(",");
+console.log(data);
