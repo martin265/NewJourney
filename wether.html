@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="switch_statements.js" type="text/css"></script>
+</head>
+<body>
+    <div class="current-temp">
+        <label for="">Select current weather</label>
+        <select name="" id="" class="form-control form-control-lg">
+            <option value="hot">Hot</option>
+            <option value="sunny">Sunny</option>
+            <option value="humid">Humid</option>
+            <option value="rain"></option>
+        </select>
+    </div>
+
+    <h1></h1>
+
+    <script>
+        // ========== a working example using the switch conditions
+        let select = document.querySelector("select");
+        let outputText = document.querySelector("h1");
+
+        // ========== adding an event listener to the drop down option here ========== //
+        select.addEventListener("change", checkWheather);
+        // ========== function to check the wether here ============ //
+        function checkWheather() {
+            // getting the value from the drop down here =========== //
+            const selectedValue = select.value;
+
+            // using the switch statements here ============ //
+            switch(selectedValue){
+                case "hot":
+                    outputText.textContent = `you have select the ${selectedValue}`;
+                    break;
+                
+                case "humid":
+                    outputText.textContent = `you have selected the ${selectedValue}`;
+            }
+        }
+    </script>
+</body>
+</html>
