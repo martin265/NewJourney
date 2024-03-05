@@ -11,3 +11,7 @@ else {
     console.log(childAllowance);
 }
 
+// getting the value from the select box here//
+const select = document.querySelector("select");
+
+
