@@ -7,7 +7,11 @@ months.addEventListener("change", addMonths);
 
 // function to loop through 
 function createDays() {
-    
+    const days = [];
+    for (let day = 1; day <= 31; day++) {
+        days.push(day);
+    }
+    return days;
 }
 
 function addMonths() {
@@ -15,6 +19,9 @@ function addMonths() {
     
     // ========== checking the values here //
     if (selectedValue === "January") {
-        monthsValue.textContent = "hello world"
+        monthsValue.textContent = createDays();
+    }
+    else {
+        monthsValue.textContent = "";
     }
 }
