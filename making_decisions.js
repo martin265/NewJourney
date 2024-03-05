@@ -14,10 +14,10 @@ else {
 // getting the value from the select box here//
 const select = document.querySelector("select");
 const message = document.querySelector("h1");
-const tempreature = 90;
+const tempreature = 70;
 
 // ===== binding the event listener for the select fields ======= //
-select.addEventListener("change", changeValue);
+select.addEventListener("change", changeValues);
 
 // ========= the function to change the value here ========= //
 function changeValue() {
@@ -41,5 +41,16 @@ function changeValue() {
 }
 
 // ============= working with another form here
+// using logical operators here
+function changeValues() {
+    // getting the value from the select input
+    const selectedValue = select.value;
 
-
+    // ========== checking using the if statement here ========== //
+    if (selectedValue === "Sunny" && tempreature <= 70) {
+        message.textContent = `the current tempreature is ${tempreature} and the weather is ${selectedValue}`;
+    }
+    else if (selectedValue === "Rainy" && tempreature >= 90) {
+        message.textContent = `the current tempreature is ${tempreature} and the weather is ${selectedValue}`;
+    }
+}
