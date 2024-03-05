@@ -1,6 +1,6 @@
 // working with the switch statements here =========== //
 const Select = document.querySelector("select");
-const message = document.querySelector("p");
+const message = document.querySelector("h1");
 
 // adding the event listener here ======== //
 Select.addEventListener("change", changeSelectedValue);
