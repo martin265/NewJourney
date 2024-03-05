@@ -46,11 +46,18 @@ for (initializer, condition, final-expression) {
 */
 
 // ========= creating a times table here
+const resultsPage = document.querySelector("button");
+const resultsControl = document.querySelector("#results");
+
+// ========= adding the event listener to the button
+resultsPage.addEventListener("click", createTimesTable);
+
+
 function createTimesTable() {
     // looping through some numbers here
     for (let singleNumber = 1; singleNumber <= 12; singleNumber++) {
         let results = singleNumber * 2;
-        console.log(`${singleNumber} * 2 = ${results}`);
+        resultsControl.textContent = `${singleNumber} * 2 = ${results}`;
     }
 
 }
