@@ -14,6 +14,7 @@ else {
 // getting the value from the select box here//
 const select = document.querySelector("select");
 const message = document.querySelector("h1");
+const tempreature = 90;
 
 // ===== binding the event listener for the select fields ======= //
 select.addEventListener("change", changeValue);
@@ -25,10 +26,14 @@ function changeValue() {
 
     // ========= usng conditional statements here ========= //
     if (selectedValue === "Sunny") {
-        message.textContent = "the curret weather is sunny";
+        if (tempreature >= 90) {
+            message.textContent = `the current tempreature is ${tempreature} ane the weather is ${selectedValue}`
+        }
     }
     else if(selectedValue === "Rain") {
-        message.textContent = "the rains will start soon";
+        if (tempreature < 80) {
+            message.textContent = `the weather is ${selectedValue} and the current tempreature is ${tempreature}`;
+        }
     }
     else {
         message.textContent === "";
