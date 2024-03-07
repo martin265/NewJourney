@@ -1,29 +1,11 @@
 // ======== working on the search function here
-const button = document.querySelector("button");
-const message = document.querySelector("message");
-const input = document.querySelector("input");
 
-// ======== the array for the names will be here ==== //
-const allNames = ["ronald", "maggie", "chifundo", "marting", "justine"];
-// binding and event listener to the input field here ======= //
-button.addEventListener("click", searchNames);
+const availableCats = ["jack", "ryan", "angie", "grace"];
+// ========= looping through the array using the while loop
+const messageProfile = "my favorite cats are ";
 
-// ========= creating the function to search for the names here ======= //
-function searchNames() {
-    
-    // getting the value when the name is entered //
-    const responseValue = input.value.toLowerCase();
-    input.focus();
-    // looping through each item in the array to check if it matchets with the entered value ====== //
-    
-    for (let profileNames of allNames) {
-        if (responseValue === profileNames[0]) {
-            console.log(responseValue);
-            break;
-        }
-        else {
-            console.log("error");
-        }
-        
-    }
+let counter = 0;
+while (counter < availableCats.length) {
+    console.log(`${messageProfile} ${availableCats[counter]}`);
+    counter++;
 }
