@@ -11,5 +11,6 @@ input.addEventListener("click", searchNames);
 // ========= creating the function to search for the names here ======= //
 function searchNames() {
     // getting the value when the name is entered //
-    
+    const responseValue = input.value.toLowerCase();
+    // looping through each item in the array to check if it matchets with the entered value ====== //
 }
