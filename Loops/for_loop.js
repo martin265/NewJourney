@@ -45,22 +45,16 @@ for (initializer, condition, final-expression) {
 }
 */
 
-// ========= creating a times table here
-const resultsPage = document.querySelector("button");
-const resultsControl = document.querySelector("#results");
-
-// ========= adding the event listener to the button
-resultsPage.addEventListener("click", createTimesTable);
-
-
-function createTimesTable() {
-    // looping through some numbers here
-    for (let singleNumber = 1; singleNumber <= 12; singleNumber++) {
-        let results = singleNumber * 2;
-        resultsControl.textContent = `${singleNumber} * 2 = ${results}`;
-    }
-
-}
 
 // calling the function here
-createTimesTable();
+// there are two type of for loops the first one hae the following syntax
+// for (variable of values)
+const profilePeople = ["ronald", "maggie", "chifundo", "martin", "wongani"];
+for (const profile of profilePeople) {
+    console.log(profile);
+}
+console.log("\n");
+// ======== the same example can also be worked out like this
+for (let i = 0; i < profilePeople.length; i++) {
+    console.log(profilePeople[i]);
+}
