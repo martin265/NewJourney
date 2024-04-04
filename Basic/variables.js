@@ -29,3 +29,16 @@ let familyProfile = ["ronald", "maggie", "chifundo", "wongani"];
 // accessing the single value in the array because the top is an array of names ======= //
 let extractedName = familyProfile[0];
 console.log(extractedName);
+
+// ========= working with objects which are also refered to us disctionaries in python ======== //
+let petNames = {first_name: "martin", "last_name": "silungwe", "age": 25, "location": "malawi"}
+let extractedpetName = petNames.age;
+console.log(extractedpetName);
+
+
+let firstName;
+firstName = 83983;
+console.log(typeof(firstName));
+const lastName = "silungwe";
+console.log(typeof(lastName));
+
