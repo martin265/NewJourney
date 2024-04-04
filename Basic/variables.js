@@ -42,3 +42,10 @@ console.log(typeof(firstName));
 const lastName = "silungwe";
 console.log(typeof(lastName));
 
+
+
+// testing the skills here ============= //
+let myProfileName = "jane";
+console.log(myProfileName);
+myProfileName = "martin";
+console.log(myProfileName);
