@@ -10,4 +10,20 @@ console.log(typeof(profileAge));
 let lostofDecimals = 90.836648673826773;
 
 let twodecimals = lostofDecimals.toFixed(3);
-console.log(twodecimals);
+console.log(typeof(twodecimals));
+
+
+let age = "90";
+
+let answer = Number(age) + 4;
+console.log(answer);
+
+let firstAge = 90;
+let secondAge = 89;
+
+console.log(firstAge + secondAge);
+console.log(firstAge * secondAge);
+console.log(firstAge - secondAge);
+console.log(firstAge / secondAge);
+console.log(firstAge % secondAge);
+console.log(firstAge**secondAge);
