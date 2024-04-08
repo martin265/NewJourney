@@ -27,3 +27,9 @@ console.log(firstAge - secondAge);
 console.log(firstAge / secondAge);
 console.log(firstAge % secondAge);
 console.log(firstAge**secondAge);
+
+
+let myValue = 90;
+
+console.log(myValue);
+
