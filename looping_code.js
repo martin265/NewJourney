@@ -60,4 +60,23 @@ function calculateResults() {
 
 }
 
-calculateResults();
+// looping through an array of items here 
+const search = document.querySelector("#searchInput");
+const results = document.querySelector("$results");
+const btn = document.querySelector("#searchButton");
+
+
+// binding an event listerner to the input here
+btn = document.addEventListener("click", loopingThrough);
+
+function loopingThrough() {
+    const allNames = ["martin", "maggie", "chifundo"];
+    const enteredValue = search.value.toLowerCase();
+
+    for (const singleName of allNames) {
+        if (singleName.startsWith("m") === enteredValue) {
+            console.log(singleName);
+            break;
+        }
+    }   
+}
