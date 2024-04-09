@@ -43,10 +43,21 @@ const newNames = allNames.filter(selectNames);
 
 
 
-// working with the multplication tables here ======== //
-const results = document.querySelector("#result");
-const reset = document.querySelector("#reset");
-const calculate = document.querySelector("#calculate");
+// // working with the multplication tables here ======== //
+// const results = document.querySelector("#results");
+// const reset = document.querySelector("#reset");
+// const calculate = document.querySelector("#calculate");
 
 
 // binding the event listener here ========== //
+function calculateResults() {
+    // looping through the code here
+    for (let i = 1; i <= 12; i++) {
+        const sum = `${i} X ${i} = ${i * i}`;
+        const results = sum;
+        console.log(results);
+    }
+
+}
+
+calculateResults();
