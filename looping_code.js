@@ -5,7 +5,7 @@ const profileNames = ["martin", "ronald", "chifundo", "maggie", "justine"];
 
 
 for (const name of profileNames) {
-    console.log(name);
+   
 }
 
 function chengeUpper(string) {
@@ -16,7 +16,7 @@ const pets = ["lion", "leopad"];
 
 const new_array = pets.map(chengeUpper);
 
-console.log(new_array);
+
 
 // using the map function to multply the numbers
 function multplyNumbers(number) {
@@ -28,4 +28,25 @@ const profileNumbers = [289, 8, 67, 3, 4, 29];
 // pass the array to a new map function
 
 const newArray = profileNumbers.map(multplyNumbers);
-console.log(newArray);
+
+
+// using the filter function to get names that starts with m and l
+
+function selectNames(string) {
+    return string.startsWith("m");
+}
+
+const allNames = ["Martin", "chifundo", "Maggie", "justine"];
+
+
+const newNames = allNames.filter(selectNames);
+
+
+
+// working with the multplication tables here ======== //
+const results = document.querySelector("#result");
+const reset = document.querySelector("#reset");
+const calculate = document.querySelector("#calculate");
+
+
+// binding the event listener here ========== //
