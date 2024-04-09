@@ -14,10 +14,16 @@ function profileName(name = "christ".toLocaleUpperCase()) {
 const body = document.body;
 const panel = document.createElement("div");
 panel.setAttribute("class", "msg");
+panel.style.backgroundColor = "red";
+panel.style.display = "flex flex-column justify-center";
+panel.style.width = "250px"
+panel.style.paddingLeft = "50px";
+panel.style.borderRadius = "10px";
+
 
 
 // appending the div to the body here =========== //
-body.appendChild(panel);
+
 
 
 // ============= appending a message content to the panel here ========= //
@@ -38,6 +44,11 @@ btn.addEventListener("click", function() {
 });
 
 
+// getting the button to show the alert here 
+const clickedButton = document.querySelector("button");
+clickedButton.addEventListener("click", ()=>{
+    body.appendChild(panel);
+});
 
 
 
