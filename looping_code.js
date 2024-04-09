@@ -43,12 +43,6 @@ const newNames = allNames.filter(selectNames);
 
 
 
-// // working with the multplication tables here ======== //
-// const results = document.querySelector("#results");
-// const reset = document.querySelector("#reset");
-// const calculate = document.querySelector("#calculate");
-
-
 // binding the event listener here ========== //
 function calculateResults() {
     // looping through the code here
@@ -61,22 +55,15 @@ function calculateResults() {
 }
 
 // looping through an array of items here 
-const search = document.querySelector("#searchInput");
-const results = document.querySelector("$results");
-const btn = document.querySelector("#searchButton");
-
 
 // binding an event listerner to the input here
-btn = document.addEventListener("click", loopingThrough);
 
-function loopingThrough() {
-    const allNames = ["martin", "maggie", "chifundo"];
-    const enteredValue = search.value.toLowerCase();
 
-    for (const singleName of allNames) {
-        if (singleName.startsWith("m") === enteredValue) {
-            console.log(singleName);
-            break;
-        }
-    }   
+const cats = ["martin", "jane", "asante", "shila", "dumie"];
+
+const counter = 0;
+
+while (counter < cats.length) {
+    console.log(`${cats}"`);
+    break;
 }
