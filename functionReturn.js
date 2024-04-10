@@ -1,16 +1,13 @@
-// getting the values using the dom manipulation
-const para = document.querySelector("p");
+const btn = document.querySelector("btn");
 
-
-
-
-function chooseName() {
-    const names = ["martin", "ronald", "chifundo"];
-    for (let name of names){
-        const content = name;
-        para.textContent = `${name}`;
-    }
-    
+// function that return a random color
+function randomColor(number) {
+    return Math.floor(Math.random() * (number + 1));
 }
 
-// function to draw a canvas on the screen
+
+// binding the event listener here
+btn.addEventListener("click", ()=>{
+    colorRGB = `rgb(${randomColor(255)}, ${randomColor(255)}, ${randomColor(255)})`;
+    document.body.style.backgroundColor = colorRGB;
+});
