@@ -7,7 +7,24 @@ function randomColor(number) {
 
 
 // binding the event listener here
-btn.addEventListener("mouseover", ()=>{
+btn.addEventListener("", ()=>{
     colorRGB = `rgb(${randomColor(255)}, ${randomColor(255)}, ${randomColor(255)})`;
     document.body.style.backgroundColor = colorRGB;
 });
+
+btn.addEventListener("click", ()=>{
+    const pageWidth = document.body.clientWidth;
+    if (pageWidth < 640 || pageWidth === 640) {
+        document.body.style.backgroundColor = "yellow";
+    }
+    else {
+        document.body.style.backgroundColor = "white";
+    }
+});
+
+function hideContainer() {
+    const div = document.querySelector("containerHide");
+    if (div.style.display = "show") {
+        div.style.backgroundColor = "yellow";
+    }
+}
