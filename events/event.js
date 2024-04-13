@@ -8,4 +8,8 @@ const email = document.getElementById("email");
 // binding the event listener here
 form.addEventListener("submit", (e)=>{
     // checking if the fields are empty here
+    if (firstName.value === "" || lastName.value === "") {
+        e.preventDefault();
+        console.log("please in the form");
+    }
 });
