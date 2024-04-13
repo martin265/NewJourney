@@ -17,5 +17,3 @@ const profile = {
         last_name: "silungwe"
     }
 }
-
-console.log(profile.profileName.first_name);
