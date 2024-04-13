@@ -8,8 +8,10 @@ const email = document.getElementById("email");
 
 // getting the labels for the form here
 const firstNameLabel = document.getElementById("firstnameLabel");
-const errorMessage = document.getElementById("error_message");
+const lastNameLabel = document.getElementById("lastnameLabel");
 
+const errorMessage = document.getElementById("error_message");
+const errorMessage2 = document.getElementById("error_message2");
 // binding the event listener here
 form.addEventListener("submit", (e)=>{
     // checking if the fields are empty here
@@ -20,5 +22,10 @@ form.addEventListener("submit", (e)=>{
         firstNameLabel.style.color = "red";
         errorMessage.textContent = "fill in the blanks please";
         errorMessage.style.color = "red"
+        // ====== // ================= // ==========//
+        lastName.style.border = "solid 2px red";
+        lastNameLabel.style.color = "red";
+        errorMessage2.textContent = "fill in the blanks please";
+        errorMessage2.style.color = "red"
     }
 });
