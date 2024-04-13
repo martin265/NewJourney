@@ -11,4 +11,11 @@ const person = {
 
 
 // using the object into another object here
+const profile = {
+    profileName: {
+        first_name: "martin",
+        last_name: "silungwe"
+    }
+}
 
+console.log(profile.profileName.first_name);
