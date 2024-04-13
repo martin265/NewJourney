@@ -15,6 +15,7 @@ form.addEventListener("submit", (e)=>{
     // checking if the fields are empty here
     if (firstName.value === "" || lastName.value === "") {
         e.preventDefault();
+        // validations for the first name
         firstName.style.border = "solid 2px red";
         firstNameLabel.style.color = "red";
         errorMessage.textContent = "fill in the blanks please";
