@@ -17,3 +17,16 @@ const profile = {
         last_name: "silungwe"
     }
 }
+
+
+function createObject(name) {
+    const object = {};
+    object.name = name;
+    object.introduceSelf = function() {
+        console.log(`hello there ${this.name}`);
+    };
+    return object;
+}
+
+const profileUser = new createObject("ronald silungwe");
+profileUser.introduceSelf();
