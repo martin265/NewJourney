@@ -6,3 +6,6 @@ const age = document.getElementById("age");
 const email = document.getElementById("email");
 
 // binding the event listener here
+form.addEventListener("submit", (e)=>{
+    // checking if the fields are empty here
+});
